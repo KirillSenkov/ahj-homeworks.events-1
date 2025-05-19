@@ -16,8 +16,12 @@
     background-image: url('../../img/goblin.png'), url('../../img/hole.png');
 }
 
-.hole.mjolnir-bash {
+.hole.goblin.mjolnir-bash {
     background-image: url('../../img/mjolnir-bash.png'), url('../../img/goblin.png'), url('../../img/hole.png');
+}
+
+.hole.mjolnir-bash {
+    background-image: url('../../img/mjolnir-bash.png'), url('../../img/hole.png');
 }
 
 .score-board {

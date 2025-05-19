@@ -4,13 +4,13 @@ const module = 'ScoreBoard';
 const scoreLimit = 5;
 
 export default class ScoreBoard {
-    #batleField;
+    #battleField;
     #board = document.createElement('div');
     #player = document.createElement('div');
     #goblin = document.createElement('div');
 
     constructor(battleField) {
-        this.#batleField = battleField;
+        this.#battleField = battleField;
 		this.#board.classList.add('score-board');
 		this.#board.insertAdjacentText('afterbegin', 'Player');
         this.#board.insertAdjacentElement('beforeend', this.#player);
@@ -25,14 +25,14 @@ export default class ScoreBoard {
     hit() {
         this.#player.textContent++;
         if (this.#player.textContent == scoreLimit) {
-            this.#batleField.stop();
+            this.#battleField.stop();
         }
     }
 
     miss() {
         this.#goblin.textContent++;
         if (this.#goblin.textContent == scoreLimit) {
-            this.#batleField.stop();
+            this.#battleField.stop();
         }
     }
 
